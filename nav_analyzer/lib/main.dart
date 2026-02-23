@@ -62,7 +62,6 @@ class _NavAnalyzerAppState extends ConsumerState<NavAnalyzerApp> {
     return ThemeData(
       useMaterial3: true,
       colorScheme: colorScheme,
-      fontFamily: 'RobotoMono',
       appBarTheme: AppBarTheme(
         centerTitle: true,
         elevation: 0,
