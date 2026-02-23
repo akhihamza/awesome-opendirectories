@@ -76,7 +76,7 @@ class PdfTransactionParser {
 
     // Pattern: "For <FUND NAME>"
     final forPattern = RegExp(
-      r'For\s+(.+?(?:FUND|Fund|fund)(?:\s*-\s*Class\s*[\'"]?\w[\'"]?)?)',
+      r"For\s+(.+?(?:FUND|Fund|fund)(?:\s*-\s*Class\s*['"']?\w['"']?)?)",
       multiLine: true,
     );
     for (final match in forPattern.allMatches(text)) {
@@ -88,7 +88,7 @@ class PdfTransactionParser {
 
     // Pattern: Fund name in all caps followed by common suffixes
     final capsPattern = RegExp(
-      r'([A-Z][A-Z\s\-]+(?:FUND|INCOME|GROWTH|BALANCED)(?:\s*-\s*Class\s*[\'"]?\w[\'"]?)?)',
+      r"([A-Z][A-Z\s\-]+(?:FUND|INCOME|GROWTH|BALANCED)(?:\s*-\s*Class\s*['"']?\w['"']?)?)",
       multiLine: true,
     );
     for (final match in capsPattern.allMatches(text)) {

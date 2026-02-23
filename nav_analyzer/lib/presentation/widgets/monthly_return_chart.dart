@@ -136,7 +136,7 @@ class MonthlyReturnChart extends StatelessWidget {
             );
           }).toList(),
         ),
-        duration: const Duration(milliseconds: 300),
+        swapAnimationDuration: const Duration(milliseconds: 300),
       ),
     );
   }
